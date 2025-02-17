@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SK_Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,14 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="SK_Form1.resx">
       <DependentUpon>SK_Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,9 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\johannes_aavik_suur.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\johannes_aavik_vaike.jpg" />
@@ -124,9 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Johannes-Aavik %281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ekla19.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

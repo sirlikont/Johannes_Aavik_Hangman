@@ -38,7 +38,6 @@ namespace Kursusetöö_Kont
             SK_Form1 gameForm = new SK_Form1();
             gameForm.Show();
             this.Hide();
-            
         }
 
         private void SK_btnExcit_Click(object sender, EventArgs e)

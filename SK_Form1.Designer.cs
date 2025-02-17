@@ -30,7 +30,6 @@
         {
             this.SK_lblHangman2 = new System.Windows.Forms.Label();
             this.SK_lblWord = new System.Windows.Forms.Label();
-            this.SK_picHangman = new System.Windows.Forms.PictureBox();
             this.SK_lblGuesses = new System.Windows.Forms.Label();
             this.SK_txtLetter = new System.Windows.Forms.TextBox();
             this.SK_btnGuess = new System.Windows.Forms.Button();
@@ -39,11 +38,12 @@
             this.SK_btnExcit = new System.Windows.Forms.Button();
             this.SK_btnNewGame = new System.Windows.Forms.Button();
             this.SK_panelEndGame = new System.Windows.Forms.Panel();
-            this.SK_picEndGame = new System.Windows.Forms.PictureBox();
             this.SK_lblEndGameText = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.SK_picHangman)).BeginInit();
+            this.SK_picEndGame = new System.Windows.Forms.PictureBox();
+            this.SK_picHangman = new System.Windows.Forms.PictureBox();
             this.SK_panelEndGame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SK_picEndGame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SK_picHangman)).BeginInit();
             this.SuspendLayout();
             // 
             // SK_lblHangman2
@@ -66,24 +66,14 @@
             this.SK_lblWord.Text = "SIIN ON SÕNA";
             this.SK_lblWord.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // SK_picHangman
-            // 
-            this.SK_picHangman.Image = global::Kursusetöö_Kont.Properties.Resources.hangman_0;
-            this.SK_picHangman.Location = new System.Drawing.Point(598, 147);
-            this.SK_picHangman.Name = "SK_picHangman";
-            this.SK_picHangman.Size = new System.Drawing.Size(388, 380);
-            this.SK_picHangman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SK_picHangman.TabIndex = 18;
-            this.SK_picHangman.TabStop = false;
-            // 
             // SK_lblGuesses
             // 
             this.SK_lblGuesses.Location = new System.Drawing.Point(159, 267);
             this.SK_lblGuesses.Name = "SK_lblGuesses";
-            this.SK_lblGuesses.Size = new System.Drawing.Size(433, 30);
+            this.SK_lblGuesses.Size = new System.Drawing.Size(433, 66);
             this.SK_lblGuesses.TabIndex = 20;
             this.SK_lblGuesses.Text = "Siin on arvatud tähed";
-            this.SK_lblGuesses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SK_lblGuesses.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // SK_txtLetter
             // 
@@ -158,19 +148,10 @@
             // 
             this.SK_panelEndGame.Controls.Add(this.SK_lblEndGameText);
             this.SK_panelEndGame.Controls.Add(this.SK_picEndGame);
-            this.SK_panelEndGame.Location = new System.Drawing.Point(119, 245);
+            this.SK_panelEndGame.Location = new System.Drawing.Point(132, 257);
             this.SK_panelEndGame.Name = "SK_panelEndGame";
             this.SK_panelEndGame.Size = new System.Drawing.Size(460, 315);
             this.SK_panelEndGame.TabIndex = 28;
-            // 
-            // SK_picEndGame
-            // 
-            this.SK_picEndGame.Location = new System.Drawing.Point(160, 0);
-            this.SK_picEndGame.Name = "SK_picEndGame";
-            this.SK_picEndGame.Size = new System.Drawing.Size(300, 200);
-            this.SK_picEndGame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SK_picEndGame.TabIndex = 0;
-            this.SK_picEndGame.TabStop = false;
             // 
             // SK_lblEndGameText
             // 
@@ -181,6 +162,25 @@
             this.SK_lblEndGameText.TabIndex = 1;
             this.SK_lblEndGameText.Text = "Siia tuleb mängu lõpu tekst";
             this.SK_lblEndGameText.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // SK_picEndGame
+            // 
+            this.SK_picEndGame.Location = new System.Drawing.Point(160, 0);
+            this.SK_picEndGame.Name = "SK_picEndGame";
+            this.SK_picEndGame.Size = new System.Drawing.Size(300, 200);
+            this.SK_picEndGame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SK_picEndGame.TabIndex = 0;
+            this.SK_picEndGame.TabStop = false;
+            // 
+            // SK_picHangman
+            // 
+            this.SK_picHangman.Image = global::Kursusetöö_Kont.Properties.Resources.hangman_0;
+            this.SK_picHangman.Location = new System.Drawing.Point(598, 147);
+            this.SK_picHangman.Name = "SK_picHangman";
+            this.SK_picHangman.Size = new System.Drawing.Size(388, 380);
+            this.SK_picHangman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SK_picHangman.TabIndex = 18;
+            this.SK_picHangman.TabStop = false;
             // 
             // SK_Form1
             // 
@@ -204,9 +204,9 @@
             this.Name = "SK_Form1";
             this.Text = "SK_Form1";
             this.Load += new System.EventHandler(this.SK_btnGuess_Click);
-            ((System.ComponentModel.ISupportInitialize)(this.SK_picHangman)).EndInit();
             this.SK_panelEndGame.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.SK_picEndGame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SK_picHangman)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

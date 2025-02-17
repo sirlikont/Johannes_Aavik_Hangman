@@ -61,7 +61,17 @@ namespace Kursusetöö_Kont
 
         private void SK_btnGuess_Click(object sender, EventArgs e)
         {
-            if (SK_txtLetter.Text.Length != 1) return;
+            if (string.IsNullOrWhiteSpace(SK_txtLetter.Text))
+            {
+                return; // Ei tee midagi, kui sisend on tühi
+            }
+
+            if (SK_txtLetter.Text.Length != 1 || !char.IsLetter(SK_txtLetter.Text[0]))
+            {
+                MessageBox.Show("Palun sisesta ainult tähti, üks täht korraga!", "Viga", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SK_txtLetter.Clear(); // Tühjendame sisendi, et kasutaja saaks õigesti sisestada
+                return;
+            }
 
             char letter = char.ToUpper(SK_txtLetter.Text[0]);
             SK_txtLetter.Text = "";

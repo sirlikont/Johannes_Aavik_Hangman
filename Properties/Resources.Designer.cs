@@ -63,16 +63,6 @@ namespace Kursusetöö_Kont.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ekla19 {
-            get {
-                object obj = ResourceManager.GetObject("ekla19", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap hangman_0 {
             get {
                 object obj = ResourceManager.GetObject("hangman-0", resourceCulture);
@@ -146,16 +136,6 @@ namespace Kursusetöö_Kont.Properties {
         internal static System.Drawing.Bitmap Johannes_Aavik__1_ {
             get {
                 object obj = ResourceManager.GetObject("Johannes-Aavik (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap johannes_aavik_suur {
-            get {
-                object obj = ResourceManager.GetObject("johannes_aavik_suur", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
