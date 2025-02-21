@@ -17,7 +17,7 @@ Selles mängus saad ära arvata Johannes Aaviku välja mõeldud sõnu. Vajadusel
 ## Mängu Funktsionaalsus
 
 - **Sõnade pakkumine:**  
-  Mängija sisestab tekstikasti üks tähemärgi ja vajutab nuppu **Pakun** või klahvi Enter.
+  Mängija sisestab tekstikasti ühe tähemärgi ja vajutab nuppu **Pakun** või klahvi Enter.
 
 - **Sisendi valideerimine:**  
   Kui sisend pole korrektne (sestada saab vaid tähemärke ja seda ühekaupa), kuvatakse veateade ning sisend tühjendatakse.
